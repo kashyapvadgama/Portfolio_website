@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashyap Vadgama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="left">My Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="kashyap_resume.pdf" target="_blank"><button class="btn">Resume</button></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section class="firstsection">
+
+      <!-- Left Section -->
+      <div class="leftsection">
+        Hi, My name is <span class="textpurple">Kashyap</span>
+        <div>and I am a <span class="textpurple">Web Developer</span></div>
+        <span class="textpurple" id="element"></span>
+      </div>
+
+      <!-- Developer Image  -->
+      <div class="rightsection">
+        <img src="./assets/bg.png" alt="Developer">
+      </div>
+    </section>
+    <hr>
+
+
+    <section class="secondsection" id="about">
+      <h1>About Me</h1>
+      <div class="aboutme">
+        <div class="displayimage">
+          <img src="./assets/my_img.jpg" alt="">
+        </div>
+        <div class="introduction">
+          <p>
+            Hello! I'm Kashyap Vadgama, a 20 year old computer science student with a passion of software development. I believe in living life with curiosity, creativity and a continuos desire for growth.
+          I have gained valuable skills in C, Python, Java and Javascript and enjoy applying them to Projects.
+          Excited to connect wiht like-minded individuals who share my enthusiasm for software development.
+          </p>
+          <div class="button">
+            <a href="My Resume.pdf" target="_blank"><button class="btn">My Resume</button></a>
+          <a href="https://github.com/kashyapvadgama" target="_blank"><button class="btn">My Github</button></a>
+          <a href="https://www.linkedin.com/in/kashyapvadgama18/" target="_blank"><button class="btn">My Linkedin</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <hr>
+
+
+    <section class="thirdsection" id="projects">
+      <h1>My Projects</h1>
+      <div class="projectcontainer">
+        <div class="projectcard">
+          <div><img id="projectimage" src="./assets/sp_clone.png" alt=""></div>
+          <h3 id="projectname">Spotify_Clone</h3>
+          <p id="projectdescription">Spotify Clone in this Project i showcase my HTML/CSS skills.</p>
+          <a href="https://github.com/kashyapvadgama/Spotify_clone"><button id="projectlink">Link</button></a>
+          
+        </div>
+        <div class="projectcard">
+          <div><img id="projectimage" src="./assets/DWG.png" alt=""></div>
+          <h3 id="projectname">Drinking Water Goal</h3>
+          <p id="projectdescription">A basic Javascript project with unique logic.</p>
+          <a href="https://github.com/kashyapvadgama/Drinking-Water-Goal"><button id="projectlink">Link</button></a>
+        </div>
+        <div class="projectcard">
+          <div><img id="projectimage" src="./assets/Flipkart_clone.png" alt=""></div>
+          <h3 id="projectname">Flipkart Clone</h3>
+          <p id="projectdescription">A Clone of Flipkart Ecommerce site using HTML CSS.</p>
+          <a href="https://github.com/kashyapvadgama/Flipkart_Clone"><button id="projectlink">Link</button></a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section class="fourthsection"  id="contact">
+      <h1>Contact Me</h1>
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+          <label for="message">Message</label>
+          <textarea name="massage" id="message" cols="60" rows="10"></textarea>
+          <button>Send Message</button>
+        </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footerlinks">
+      <div class="footerfirst">
+        <h2 class="textpurple">Kashyap</h2>
+        <p>Thank you for visiting my website.</p>
+        <p>Hope to see you again soon.</p>
+      </div>
+      <div class="footersecond">
+        <h3 class="textpurple">RESOURCES</h3>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footerthird">
+        <h3 class="textpurple">CONTACT INFORMATION</h3>
+        <a href="#">
+          <span></span>
+          <span class="listtext">ksahyapvadgama18@gmail.com</span>
+        </a>
+      </div>
+      </div>
+    </section>
+    <hr>
+    <div class="footertext">copyright &#xA9; kashyapvadgamadev.com || All rights reserved</div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ["DSA Enthusiast","Web Developer"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</body>
+
+</html>
